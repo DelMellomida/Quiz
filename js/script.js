@@ -1,28 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuItems = document.querySelectorAll('.box img');
+function showDesc(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    description.style.display = "block";
+}
 
-    menuItems.forEach(menu => {
-        menu.addEventListener('click', () => {
-            const desc = document.querySelector('.box .description');
-            desc.style.visibility = "visible";
-        })
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const cancelBtn = document.querySelectorAll('.box .description .fa-solid fa-xmark');
-
-    menuItems.forEach(menu => {
-        menu.addEventListener('click', () => {
-            const desc = document.querySelector('.box .description');
-            desc.style.visibility = "visible";
-        })
-    });
-});
-
-var cartBtn = document.querySelector(".btnImage");
-
-cartBtn.onclick = function(){
-    var desc = document.getElementById(".description"); 
-    desc.style.visibility = "visible";
+function closeDesc(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    description.style.display = "none";
 }
