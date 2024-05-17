@@ -134,13 +134,20 @@ header .img-container img{
     justify-content: center;
     position: absolute;
     width: 20%;
-    height: 50%;
+    height: 80%;
     background-color: aliceblue;
     color: black;
     text-align: center;
     border-radius: 10px;
     display: none;
     flex-direction: column;
+    margin-top: 200px;
+    padding: 20px;
+    height: auto;
+}
+
+.box:hover:not(.desc) {
+    box-shadow: 6px 6px gray;
 }
 
 .footer-content {
