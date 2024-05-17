@@ -25,6 +25,7 @@ header{
     width: 100vw;
     background-color: rgb(189, 18, 18);
     padding: 20px;
+    z-index: 1000;
 }
 
 header ul{
@@ -110,7 +111,7 @@ header .img-container img{
     background-color: rgb(12, 162, 12);
 }
 
-.box #description{
+.box .desc{
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -120,12 +121,8 @@ header .img-container img{
     color: black;
     text-align: center;
     border-radius: 10px;
-    visibility: hidden;
+    display: none;
     flex-direction: column;
-}
-
-.box:hover #description{
-    visibility: visible;
 }
 
 .footer-content {
@@ -160,4 +157,8 @@ header .img-container img{
     color: #ffffff;
     font-size: 15px;
     font-weight:900;
+}
+
+i:hover{
+    cursor: pointer;
 }
